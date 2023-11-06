@@ -1,0 +1,65 @@
+/* ---TYPOGRAPHY SYSTEM
+
+- font-size (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+ ---WHITESPACE
+ - spacing system (px)
+ 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+
+/* general */
+
+:root {
+  /* colors */
+  --Very-Dark-Magenta: hsl(300, 43%, 22%);
+  --Soft-Pink: hsl(333, 80%, 67%);
+  --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+  --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+
+  /* typography */
+  --font-family: "League Spartan", sans-serif;
+
+  --font-wg-reg: 400;
+  --font-wg-med: 500;
+  --font-wg-bold: 700;
+
+  --border-radius: 10px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  font-family: var(--font-family);
+  font-size: 1rem;
+  position: relative;
+}
+
+.bg-pattern-top {
+  background-image: url("./images/bg-pattern-top-mobile.svg");
+  z-index: 0;
+}
+
+.bg-pattern-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.social-proof-section {
+  padding: 30px;
+}
+
+/* grid 2 columns */
+.grid-item-1 {
+  text-align: center;
+}
